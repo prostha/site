@@ -1,4 +1,4 @@
-pn{
+{
 	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
 	"useGitignore": true,
 	"ignoreRandomStrings": true,
@@ -56,42 +56,23 @@ pn{
 		"misspelled"
 	],
 	"ignoreRegExpList": [
-		// ignore contributors usernames in markdown files
 		"usernames\\s*=\\s*\\{[^}]*\\}",
-
-		// ignore any account related property value
 		"name:\\s*\"[^\"]*\"",
 		"description:\\s*\"[^\"]*\"",
 		"avatar:\\s*\"[^\"]*\"",
 		"twitter:\\s*\"[^\"]*\"",
 		"image:\\s*\"[^\"]*\"",
-
-		// ignore any secret-like property value
 		"privateKeyPass:\\s*\"[^\"]*\"",
 		"encPrivateKeyPass:\\s*\"[^\"]*\"",
 		"\"x\":\\s*\"[^\"]*\"",
-
-		// markdown links to x.com or github accounts
 		"\\[@[^\\]]+\\]\\([^\\)]+\\)",
 		"\\[[^\\]]+\\]\\(https://github\\.com/\\w+\\)",
 		"\\[[^\\]]+\\]\\(https://x\\.com/\\w+\\)",
-
-		// ignore anything that looks like an npm scope or account handle
 		"@[a-zA-Z0-9-_]+",
-
-		// match any string starting with price_ (stripe related)
 		"price_[a-zA-Z0-9-_]+",
-
-		// match Stripe subscription IDs (sub_)
 		"sub_[a-zA-Z0-9-_]+",
-
-		// match any url-encoded string
 		"%[0-9A-Fa-f]{2}(?:%[0-9A-Fa-f]{2})*",
-
-		// ignore vitest assertions (probably the source of the typo comes from somewhere else)
 		"toBe\\([^\\)]*\\)",
-
-		// ignore GitHub security advisory IDs (GHSA-xxxx-xxxx-xxxx)
 		"GHSA(?:-[a-z0-9]+)+"
 	],
 	"ignorePaths": [

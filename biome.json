@@ -133,7 +133,7 @@
       "!**/coverage",
       "!**/build",
       "!**/demo/electron/out",
-      "!**/.next",
+      "!**/apps/docs/.next",
       "!**/.svelte-kit",
       "!**/.contentlayer",
       "!**/.turbo",

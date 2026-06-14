@@ -17,7 +17,7 @@
       "inputs": ["$TURBO_DEFAULT$", "tsconfig.json", "tsdown.config.*"],
       "outputs": ["dist/**", "node_modules/.cache/ts/**"]
     },
-    "docs#build": {
+    "apps/docs#build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**"],

@@ -11,7 +11,7 @@
     "**/node_modules/**",
     "**/*.test.ts",
     "**/demo/**",
-    "**/docs/**",
+    "**/apps/docs/**",
     "**/e2e/**",
     "**/test/**",
     "packages/better-auth/src/**",

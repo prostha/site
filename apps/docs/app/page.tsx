@@ -10,7 +10,7 @@ export default async function HomePage() {
 	const communityStats = await getCommunityStats();
 
 	return (
-		<div id="hero" className="relative pt-[45px] lg:pt-0">
+		<div id="hero" className="relative pt-11.25 lg:pt-0">
 			<div className="relative text-foreground" data-v="1">
 				<div className="flex flex-col lg:flex-row">
 					{/* Left side — Hero title */}

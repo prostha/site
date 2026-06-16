@@ -389,10 +389,10 @@ const mobileMenuSections: MobileMenuSection[] = [
 		})),
 	},
 	{ name: "resources", children: resourceFiles },
-	{ name: "enterprise", href: "/enterprise" },
+	{ name: "contact", href: "/contact" },
 ];
 
-export function StaggeredNavFiles() {
+export function Navigation() {
 	const pathname = usePathname() || "/";
 	const currentVersion = getVersionFromPathname(pathname);
 	const prefixHref = (href: string) => versionedDocsHref(href, currentVersion);
@@ -443,7 +443,7 @@ export function StaggeredNavFiles() {
 		isDocs ||
 		isPricingPage ||
 		isResourcePage ||
-		isActive("/enterprise");
+		isActive("/contact");
 	const isNarrowLeft = isDocs;
 	const leftPaneWidthClass = isNarrowLeft
 		? "w-[22vw] max-w-[300px]"
@@ -648,21 +648,21 @@ export function StaggeredNavFiles() {
 						className="flex-1"
 					>
 						<Link
-							href="/enterprise"
+							href="/contact"
 							className={`group/tab relative flex items-center justify-center gap-1.5 px-2 xl:px-4 py-3 h-full border-r ${tabDividerClass} transition-colors duration-150 ${
-								isActive("/enterprise")
+								isActive("/contact")
 									? `bg-background border-b-2 ${activeTabBorderClass}`
 									: "bg-transparent hover:bg-foreground/[0.03]"
 							}`}
 						>
 							<span
 								className={`font-mono text-xs uppercase tracking-wider transition-colors duration-150 whitespace-nowrap ${
-									isActive("/enterprise")
+									isActive("/contact")
 										? "text-foreground"
 										: "text-foreground/65 dark:text-foreground/50 group-hover/tab:text-foreground/75"
 								}`}
 							>
-								enterprise
+								contact
 							</span>
 						</Link>
 					</motion.div>

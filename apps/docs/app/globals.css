@@ -1,12 +1,12 @@
 /* spell-checker:disable */
 @import "tailwindcss";
+@import "tw-animate-css";
 @import "fumadocs-ui/css/black.css";
 @import "fumadocs-ui/css/preset.css";
 @source "../components/**/*.{ts,tsx}";
 @source "../node_modules/fumadocs-ui/dist/**/*.js";
 
 /* biome-ignore lint/correctness/noInvalidPositionAtImportRule: <explanation> */
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 

@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import Script from "next/script";
 import type { ReactNode } from "react";
-import { StaggeredNavFiles } from "@/components/landing/staggered-nav-files";
+import { Navigation } from "@/components/landing/navigation";
 import { Providers } from "@/components/providers";
 import { createMetadata } from "@/lib/metadata";
 
@@ -68,7 +68,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 			>
 				<Providers>
 					<div className="relative min-h-dvh">
-						<StaggeredNavFiles />
+						<Navigation />
 						{children}
 					</div>
 				</Providers>
